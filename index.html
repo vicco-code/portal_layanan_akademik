@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Layanan Akademik</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="site-header">
+        <div class="container header-container">
+            <h1 class="site-title">Portal Layanan Akademik</h1>
+            <nav class="main-nav" aria-label="Navigasi Utama">
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#permohonan">Permohonan</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main id="main-content">
+        
+        <!-- Section 1: Intro / Hero -->
+        <section id="beranda" class="hero-section">
+            <div class="container">
+                <h2>Layanan Akademik Cepat & Terpadu</h2>
+                <p>Ajukan permohonan surat keterangan, transkrip sementara, dan legalisir dokumen akademik secara online dengan mudah.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Kartu Layanan (3 Kartu) -->
+        <section id="layanan" class="services-section">
+            <div class="container">
+                <h2>Daftar Layanan Akademik</h2>
+                <div class="services-grid">
+                    
+                    <!-- Kartu 1 -->
+                    <article class="service-card">
+                        <h3>Surat Aktif Kuliah</h3>
+                        <p>Pengajuan surat keterangan mahasiswa aktif untuk keperluan beasiswa, tunjangan orang tua, atau instansi luar.</p>
+                        <a href="#permohonan" class="btn-service">Pilih Layanan</a>
+                    </article>
+
+                    <!-- Kartu 2 -->
+                    <article class="service-card">
+                        <h3>Transkrip Sementara</h3>
+                        <p>Cetak rekap nilai akademik sementara yang telah disahkan untuk keperluan lamaran kerja atau magang.</p>
+                        <a href="#permohonan" class="btn-service">Pilih Layanan</a>
+                    </article>
+
+                    <!-- Kartu 3 -->
+                    <article class="service-card">
+                        <h3>Legalisir Dokumen</h3>
+                        <p>Layanan verifikasi dan pengesahan salinan ijazah serta transkrip nilai resmi Fakultas/Universitas.</p>
+                        <a href="#permohonan" class="btn-service">Pilih Layanan</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Form Permohonan (4 Field) -->
+        <section id="permohonan" class="form-section">
+            <div class="container">
+                <h2>Formulir Permohonan Layanan</h2>
+                <form action="#" method="get" class="academic-form">
+                    
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap <span class="required-mark">*</span></label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Student / Kampus <span class="required-mark">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="contoh: nama@student.unpatti.ac.id">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis_layanan">Jenis Layanan <span class="required-mark">*</span></label>
+                        <select id="jenis_layanan" name="jenis_layanan" required>
+                            <option value="">-- Pilih Jenis Layanan --</option>
+                            <option value="surat_aktif">Surat Aktif Kuliah</option>
+                            <option value="transkrip">Transkrip Sementara</option>
+                            <option value="legalisir">Legalisir Dokumen</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="keperluan">Keperluan / Catatan <span class="required-mark">*</span></label>
+                        <textarea id="keperluan" name="keperluan" rows="4" required placeholder="Jelaskan tujuan permohonan Anda..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Kirim Permohonan</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Portal Layanan Akademik - Universitas Pattimura.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
